@@ -1,0 +1,15 @@
+<h1>Formulario Bicicleta</h1>
+
+<p>Color <input type="text" placeholder="Introduce el color" [(ngModel)]="bicicleta.color"></p>
+<p>Marca <input type="text" placeholder="Introduce la Marca" [(ngModel)]="bicicleta.marca"></p>
+<p>Velocidad <input type="number"  [(ngModel)]="bicicleta.velocidad"></p>
+<p>Piñones <input type="number"  [(ngModel)]="bicicleta.piniones"></p>
+<p>Platos <input type="number" [(ngModel)]="bicicleta.platos"></p>
+<p>Eléctrica <input type="checkbox" [(ngModel)]="bicicleta.electrica"/></p>
+
+<p>Modificar Velocidad <input type="number" [(ngModel)]="modificarVel"></p>
+<button (click)="bicicleta.acelerar(modificarVel)">Acelerar</button>
+<button (click)="bicicleta.frenar(modificarVel)">Frenar</button>
+<br><br>
+<button (click)="enviarDatos()">Enviar</button>
+<p>Bicicleta => {{resultado}} </p>
