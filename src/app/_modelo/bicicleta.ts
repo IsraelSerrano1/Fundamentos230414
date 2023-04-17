@@ -56,7 +56,7 @@ export class Bicicleta{
         this._electrica = value;
     }
 
-    public acelerar(velocidad:number) {
+    acelerar(velocidad:number) {
         
        this.velocidad += velocidad;
     }

@@ -8,8 +8,8 @@
 <p>Eléctrica <input type="checkbox" [(ngModel)]="bicicleta.electrica"/></p>
 
 <p>Modificar Velocidad <input type="number" [(ngModel)]="modificarVel"></p>
-<button (click)="bicicleta.acelerar(modificarVel)">Acelerar</button>
-<button (click)="bicicleta.frenar(modificarVel)">Frenar</button>
+<button (click)="acelerar()">Acelerar</button>
+<button (click)="frenar()">Frenar</button>
 <br><br>
 <button (click)="enviarDatos()">Enviar</button>
 <p>Bicicleta => {{resultado}} </p>

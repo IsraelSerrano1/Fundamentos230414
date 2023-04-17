@@ -16,5 +16,11 @@ modificarVel: number=0
 enviarDatos(){
   this.resultado= this.bicicleta.toString()
 }
+acelerar(){
+  this.bicicleta.acelerar(this.modificarVel)
+}
+frenar(){
+  this.bicicleta.frenar(this.modificarVel)
+}
 
 }
